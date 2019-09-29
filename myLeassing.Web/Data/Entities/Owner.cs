@@ -27,5 +27,7 @@ namespace myLeassing.Web.Data.Entities
         public string Adress { get; set; }
         public string FullName => $"{FirsName} {LasName}";
         public string FullNameWhitDocument => $"{FirsName} {LasName} - {Document}";
+        public ICollection<Property> Properties { get; set; }
+        public ICollection<Contract> Contracts { get; set; }
     }
 }
